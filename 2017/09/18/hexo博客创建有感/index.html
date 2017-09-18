@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	 <link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			
+    <title>
+    Hexo
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+
+			    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">DaiDaiDongDong</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/daidaidongdong" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >hexo博客创建有感</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p>hexo 搭建博客有感</p>
+<ul>
+<li><p>安装 hexo</p>
+<pre><code>首先电脑上要有node还有git ，建议在桌面打开命行。
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">$ npm install hexo-cli -g</div></pre></td></tr></table></figure>
+</code></pre></li>
+<li><p>初始化 hexo 博客项目<br>1.在桌面新创建HEXO文件夹<br>2.在HEXO文件夹内，右键运行Git  Bash，输入命令:</p>
+<pre><code>$ hexo init
+</code></pre><p>3.完成后将HEXO文件夹拖到VSCode中打开，会如下图文件。</p>
+</li>
+</ul>
+<ul>
+<li><p>文档名介绍<br>_config.yml   全局配置文件，网站的很多信息都在这里配置，诸如网站名称，副标题，描述，作者，语言，主题，部署等等参数, 这个文件下面会做较为详细的介绍 。<br>scaffolds   “ 脚手架、骨架 ”的意思，当你新建一篇文章（hexo new ‘title’）的时候，hexo是根据这个目录下的文件进行构建的 。</p>
+<pre><code>source  这个目录很重要，新建的文章都是在保存在这个目录下的.
+             _posts 。需要新建的博文都放在 _posts 目录下。
+             _posts 目录下是一个个 markdown 文件。你应该可以看到一个 hello-world.md 的文 
+             件，文章就在这个文件中编辑 。                                                          
+             _posts 目录下的md文件，会被编译成html文件，放到 public （此文件现在应该没有，
+             因为你还没有编译过）文件夹下。你可以用typora写好后将文件储存到source文件名下。
+             还可以      ctrl + ~ 调出操作命令行
+                               hexo new 输入博客名 （中文英文都可以） 
+                               完成后在source文件目录下就会出现你的新建博客。
+                               ctrl + s  保存
+</code></pre><p>themes  网站主题目录，hexo有非常好的主题拓展，支持的主题也很丰富。该目录下，每一个子目录就是一个主题    用法 ：去hexo官网的主题里面看别人的主题，进到别人的github上找到他的主题文件，克隆到themes文件夹内，点开在主目录下的_config.yml，在内容中找到theme  并将名字改成你下载的主题名字。</p>
+</li>
+</ul>
+<pre><code>另外，点开你下载的主题，里面也会有_config.yml  在这里面你可以改掉别人主题里面的标题，网址等，还有source里面有用的图片，也可以改成你自己的图片。
+</code></pre><ul>
+<li><p>在本地中浏览博客<br>用于在对博客有改动后（例如：换主题，写好了新博客要发布等）在本地试运行，运行成功后再放到浏览器上。ctrl+~调出命令行</p>
+<pre><code>hexo clean
+hexo g
+hexo d
+</code></pre></li>
+<li><p>部署到 Github 上<br>1.申请Github账号 ( 别忘了邮箱验证 )<br>2.新建一个 Repository , 注意仓库的名字前缀必须和自己 github 的用户名保持严格一致</p>
+<p>3.在_config.yml进行配置</p>
+<p>在 deploy 中配置自己的仓库信息 ( 注意冒号后面有空格 )改成自己的</p>
+<pre><code>4.安装hexo-deployer-git自动部署发布工具
+</code></pre><p>  $  npm install hexo-deployer-git -–save</p>
+<pre><code>5.发布到Github
+</code></pre></li>
+</ul>
+<p>输入如下命令 :</p>
+<pre><code>$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d
+</code></pre><p>然后输入自己的 Github 用户名和密码即可</p>
+<pre><code>6.在浏览器中输入 https://daidaidongdong.github.io便可以打开自己的博客啦 !!!
+</code></pre><p>第4，5步是每一次更改后要发布到互联网上必须做的流程</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2017/09/18/hexo博客创建有感/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2017/09/18/hexo博客创建有感/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2017总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
