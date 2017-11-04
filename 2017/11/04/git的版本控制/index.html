@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	 <link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			
+    <title>
+    Hexo
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+
+			    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">DaiDaiDongDong</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/daidaidongdong" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >git的版本控制</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p>首先 添加并提交了一个文件,<br>这里是指 git add 文件名<br>        git commit -m””<br>这两步命令 不是上传到仓库！</p>
+<p>然后我们现在修改了这个文件。</p>
+<p>现在，运行git status命令看看结果：<br>git status命令可以让我们时刻掌握仓库当前的状态</p>
+<p>我们可以用命令 来查看具体修改了什么内容 :<br>$ git diff</p>
+<p>知道什么内容被修改了, 我们再把它提交到仓库<br>提交修改和提交新文件是一样的两步<br>第一步是git add：<br>$ git add 文件名<br>同样没有任何输出。<br>在执行第二步git commit之前，我们再运行git status看看当前仓库的状态：</p>
+<p>git status告诉我们，将要被提交的修改包括这个文件，下一步，就可以放心地提交了：<br>$ git commit -m “B”<br>会提示 :<br>[master bdb7ea8] add distributed<br> 1 file changed, 1 insertion(+), 2 deletions(-)</p>
+<p>提交后，我们再用git status命令看看仓库的当前状态：<br>提示 :<br>位于分支 master<br>无文件要提交，干净的工作区</p>
+<p>现在，有两个版本被提交到Git仓库里了</p>
+<p>Git 是版本控制系统, 我们可以使用 git log命令来查看历史记录：<br>commit bdb7ea89c46da139877218f2522dee7a37906f46<br>Author: IDeepspace <a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x63;&#x78;&#x69;&#110;&#x31;&#x34;&#x32;&#x37;&#x40;&#113;&#x71;&#x2e;&#99;&#111;&#109;">&#x63;&#x78;&#x69;&#110;&#x31;&#x34;&#x32;&#x37;&#x40;&#113;&#x71;&#x2e;&#99;&#111;&#109;</a><br>Date:   Mon Sep 25 20:36:16 2017 +0800</p>
+<pre><code>B
+</code></pre><p>commit 6facf52977b5a2e7c749ec5f37aa412d09a24704<br>Author: IDeepspace <a href="&#x6d;&#97;&#105;&#108;&#116;&#111;&#x3a;&#x63;&#120;&#105;&#110;&#49;&#52;&#x32;&#55;&#64;&#x71;&#x71;&#46;&#99;&#x6f;&#x6d;">&#x63;&#120;&#105;&#110;&#49;&#52;&#x32;&#55;&#64;&#x71;&#x71;&#46;&#99;&#x6f;&#x6d;</a><br>Date:   Mon Sep 25 20:06:32 2017 +0800</p>
+<pre><code>A
+</code></pre><p>我们可以看到两次提交记录. 新记录排在最上方</p>
+<p>我们现在的的版本是 B , 我们准备把现在的文件回退到上一个版本A</p>
+<p>首先，Git必须知道当前版本是哪个版本，在Git中，用HEAD表示当前版本，也就是最新的提交bdb7ea89c46da1…6f46（注意我的提交ID和你的肯定不一样），上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。<br>现在我们使用git reset命令：<br>$ git reset –hard HEAD^</p>
+<p>会提示 :<br>More？<br>输入^  (表示上一个版本)</p>
+<p>接着会提示 ：<br>HEAD 现在位于 A</p>
+<p>我们用git log再看看现在版本库的状态：<br>commit 6facf52977b5a2e7c749ec5f37aa412d09a24704<br>Author: IDeepspace <a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#99;&#x78;&#x69;&#110;&#49;&#x34;&#50;&#55;&#x40;&#113;&#x71;&#x2e;&#99;&#111;&#x6d;">&#99;&#x78;&#x69;&#110;&#49;&#x34;&#50;&#55;&#x40;&#113;&#x71;&#x2e;&#99;&#111;&#x6d;</a><br>Date:   Mon Sep 25 20:06:32 2017 +0800</p>
+<pre><code>A
+</code></pre><p>发现已经没有我们之前的 B 版本了.这个时候, 我们要想再回到这个版本, 该怎么办呢?<br>只要命令行窗口还没有关闭 , 我们就可以往上找到B版本的commit id , 然后我们执行<br>$ git reset –hard bdb7ea89c46da139877218f2522dee7a37906f46</p>
+<p>会提示 :<br>HEAD 现在位于 bdb7ea8 B</p>
+<p>这样, 我们就回到了我们想要的版本!</p>
+<p>但是有个问题 , 如果刚才打开的命令窗口关闭了, 找不到B 版本的 commit id 该怎么办呢?</p>
+<p>Git提供了一个命令 $ git reflog 用来记录你的每一次命令：<br>bdb7ea8 HEAD@{0}: reset: moving to bdb7ea89c46da139877218f2522dee7a37906f46<br>6facf52 HEAD@{1}: reset: moving to HEAD^<br>bdb7ea8 HEAD@{2}: commit: add distributed<br>6facf52 HEAD@{3}: commit (initial): I wrote a readme file</p>
+<p>第一行信息显示了B 版本的 commit id<br>//  归纳Git版本控制的方法<br>作者：Sam_Lau<br>链接：<a href="http://www.jianshu.com/p/67afe711c731" target="_blank" rel="external">http://www.jianshu.com/p/67afe711c731</a></p>
+<p>创建仓库</p>
+<p>git init<br>git clone<br>git config<br>保存修改</p>
+<p>git add<br>git commit<br>查看仓库</p>
+<p>git status<br>git log –oneline<br>撤销修改</p>
+<p>查看之前的commit</p>
+<p>git checkout <commit> <file><br>git checkout <commit><br>git checkout <branch><br>撤销公共修改</branch></commit></file></commit></p>
+<p>git revert <commit><br>撤销本地修改</commit></p>
+<p>git reset<br>git clean<br>重写Git历史记录</p>
+<p>git commit –amend<br>git rebase<br>git reflog</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2017/11/04/git的版本控制/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2017/11/04/git的版本控制/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2017总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
